@@ -33,7 +33,7 @@ io.on("connection", (socket) => {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
         },
         body: JSON.stringify({
-          model: "x-ai/grok-4-fast:free",
+          model: "openai/gpt-4o-mini",
           messages: [
             { role: "system", content: "You are a friendly AI Fitness Coach. Give short, clear, motivational answers." },
             { role: "user", content: msg },
